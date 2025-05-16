@@ -960,6 +960,6 @@ buttons.forEach(button => {
     checkbox.addEventListener('change', updateVisibility);
   });
 
-  // Initialize
+  // Initialize Surah
   populateSurahList([]); // Start with empty list until search
 });
