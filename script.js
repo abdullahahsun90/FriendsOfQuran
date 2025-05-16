@@ -114,7 +114,80 @@ document.addEventListener("DOMContentLoaded", () => {
 </div>
 
         `,
-        maujzaat: `<p>.This section will be filled later</p>`,
+        maujzaat: `
+        <div style="font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif; direction: rtl; padding: 20px; background: linear-gradient(to bottom right, #f9f9f9, #e0f7fa); color: #333; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 1000px; margin: auto;">
+
+  <h2 style="text-align: center; font-size: 2rem; color: #00695c;">🌟 سورۃ الفاتحہ کے لسانی، روحانی اور تاریخی معجزات</h2>
+
+  <hr style="border-top: 2px dashed #80cbc4; margin: 20px 0;">
+
+  <!-- Lisani Moajzaat -->
+  <section style="margin-bottom: 30px;">
+    <h3 style="color: #00796b; font-size: 1.5rem;">🧠 لسانی معجزات</h3>
+    <ul style="line-height: 1.9; font-size: 1.1rem;">
+      <li>یہ سورۃ مکمل عربی زبان کی فصاحت و بلاغت کا شاہکار ہے۔</li>
+      <li>ہر آیت اپنے اندر گہرا مفہوم سموئے ہوئے ہے اور ایک جامع پیغام دیتی ہے۔</li>
+      <li>پوری سورۃ میں الفاظ کا چناؤ انتہائی متوازن اور بامقصد ہے۔</li>
+      <li>سورۃ الفاتحہ میں سوال، جواب، حمد، دعا، اور اقرار سب ایک ساتھ شامل ہیں۔</li>
+      <li>صوتی آہنگ (rhythm) ایسا ہے کہ دل کو چھو جائے – قرآن کی موزونیت کا نمونہ۔</li>
+    </ul>
+  </section>
+
+  <!-- Rohani Moajzaat -->
+  <section style="margin-bottom: 30px;">
+    <h3 style="color: #00796b; font-size: 1.5rem;">🕊️ روحانی معجزات</h3>
+    <ul style="line-height: 1.9; font-size: 1.1rem;">
+      <li>اس سورۃ کو "ام القرآن" کہا گیا – پوری کتاب کا خلاصہ اس میں موجود ہے۔</li>
+      <li>شفاء کے لیے سب سے مؤثر سورۃ – نبی ﷺ نے اسے "الشفاء" کہا۔</li>
+      <li>نماز کا لازمی جزو ہے – بغیر اس کے نماز مکمل نہیں ہوتی۔</li>
+      <li>ہر شخص کی انفرادی دعا اور رابطے کا ذریعہ اللہ سے – "ایاک نعبد و ایاک نستعین"۔</li>
+      <li>دل کو سکون، روح کو جِلا، اور اللہ سے قرب کا ذریعہ۔</li>
+    </ul>
+  </section>
+
+  <!-- Tarikhi Moajzaat -->
+  <section style="margin-bottom: 30px;">
+    <h3 style="color: #00796b; font-size: 1.5rem;">📜 تاریخی معجزات</h3>
+    <ul style="line-height: 1.9; font-size: 1.1rem;">
+      <li>سورۃ الفاتحہ سب سے پہلے مکمل نازل ہونے والی سورۃ ہے جو مستقل انداز میں قرآن کا حصہ بنی۔</li>
+      <li>تورات، زبور، انجیل کی تعلیمات کا نچوڑ سورۃ الفاتحہ میں ہے۔</li>
+      <li>یہ وہ سورۃ ہے جسے ہر نبی کی دعا کا خلاصہ قرار دیا گیا ہے۔</li>
+      <li>صحابہ کرام رضی اللہ عنہم اسے علاج کے طور پر بھی استعمال کرتے تھے (دم کے طور پر)۔</li>
+      <li>سورۃ الفاتحہ کو ہر دور میں "قرآن کی روح" تصور کیا گیا ہے۔</li>
+    </ul>
+  </section>
+
+  <style>
+    @keyframes grow1 {
+      from {height: 0;}
+      to {height: 180px;}
+    }
+    @keyframes grow2 {
+      from {height: 0;}
+      to {height: 160px;}
+    }
+    @keyframes grow3 {
+      from {height: 0;}
+      to {height: 140px;}
+    }
+
+    @media (max-width: 600px) {
+      div[style*="display: flex;"] {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+      }
+      div[style*="background: #4db6ac;"],
+      div[style*="background: #81c784;"],
+      div[style*="background: #ffb74d;"] {
+        width: 40px !important;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</div>
+
+        `,
       rukoos: [
 {
   "number": 1,
@@ -352,7 +425,163 @@ document.addEventListener("DOMContentLoaded", () => {
 </table> <p style="text-align: center; font-style: italic; color: #566573; margin-top: 40px;">
 </p>
 </div>`,
-        maujzaat: `<p>.This section will be filled later</p>`,
+        maujzaat: `
+        <div style="font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Arial', sans-serif; direction: rtl; text-align: right; color: #222; padding: 20px; max-width: 1200px; margin: auto; background: #f9f9f9; border-radius: 10px;">
+
+  <!-- Title -->
+  <h1 style="text-align: center; color: #006400; font-size: 2.5em; margin-bottom: 10px;">سورۃ البقرہ کے معجزات</h1>
+  <p style="text-align: center; font-size: 1.2em; color: #555;">عددی، ادبی، سائنسی، روحانی اور تاریخی عجائبات کا تفصیلی جائزہ</p>
+  <hr style="margin: 20px 0;">
+
+  <!-- Group: تعارف -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">🔰 تعارف</h2>
+    <p style="font-size: 1.1em; line-height: 2;">
+      سورۃ البقرہ قرآنِ پاک کی سب سے طویل سورۃ ہے جس میں عقائد، عبادات، شریعت، تاریخ، اخلاق، معاشرت اور معاشیات کا مکمل نظام موجود ہے۔ اس سورۃ میں کئی ایسے حقائق اور عجائبات موجود ہیں جو جدید سائنس، ریاضی، تاریخ اور انسان کی روحانی دنیا کو حیرت میں ڈال دیتے ہیں۔
+    </p>
+  </section>
+
+  <!-- Group: عمومی معجزات -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">📘 عمومی معجزات</h2>
+    <ul style="font-size: 1.1em; line-height: 2; list-style: square; padding-right: 20px;">
+      <li>قرآن کی سب سے بڑی سورۃ: <strong>286 آیات</strong></li>
+      <li>تقریباً <strong>49,000 الفاظ</strong> — مکمل اسلامی قانون کا مجموعہ</li>
+      <li>ابتدائی حروف "الم" پر مشتمل</li>
+      <li>سب سے طویل آیت: <strong>آیت 282</strong> (قرض کا قانون)</li>
+      <li>سب سے جامع آیت: <strong>آیت الکرسی (255)</strong></li>
+      <li>سب سے مؤثر آیات: <strong>آخری دو آیات (285–286)</strong></li>
+    </ul>
+  </section>
+
+  <!-- Group: آیت الکرسی، آخری آیات، قرض -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">✨ مخصوص آیات کے معجزات</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+      <div style="flex: 1; min-width: 280px; background: #fff8dc; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px #ccc;">
+        <h3 style="color: #6b4226;">🛡️ آیت الکرسی</h3>
+        <p>قرآن کی سب سے عظیم آیت — اللہ کی قدرت، علم، عرش، اور اختیار کی مکمل تصویر۔</p>
+        <ul>
+          <li>نماز کے بعد پڑھنے کی تاکید</li>
+          <li>جنات و شیطان سے حفاظت</li>
+          <li>ایمان کی گہرائی بیان کرتی ہے</li>
+        </ul>
+      </div>
+      <div style="flex: 1; min-width: 280px; background: #e0ffe0; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px #ccc;">
+        <h3 style="color: #004d00;">🌙 آخری دو آیات</h3>
+        <p>ایمان، مغفرت، اطاعت، اور دعا کا مجموعہ۔</p>
+        <ul>
+          <li>رات کو پڑھنا کافی ہے</li>
+          <li>براہِ راست اللہ سے مخاطب</li>
+        </ul>
+      </div>
+      <div style="flex: 1; min-width: 280px; background: #f0f8ff; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px #ccc;">
+        <h3 style="color: #00008b;">💰 قرض کی آیت (282)</h3>
+        <p>جدید مالیاتی اصولوں سے میل کھانے والی تفصیلی آیت۔</p>
+        <ul>
+          <li>تحریری معاہدہ</li>
+          <li>گواہ کا تقرر</li>
+          <li>شفاف لین دین</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Group: عددی معجزات -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">🔢 عددی و ریاضیاتی معجزات</h2>
+
+    <h3 style="color: #444;">📊 الفاظ کی تکرار:</h3>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+      <thead>
+        <tr style="background: #333; color: #fff;">
+          <th style="padding: 8px; border: 1px solid #ccc;">لفظ</th>
+          <th style="padding: 8px; border: 1px solid #ccc;">معنی</th>
+          <th style="padding: 8px; border: 1px solid #ccc;">تکرار</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">اللہ</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">اللہ تعالی</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">100 بار</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">ایمان</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">یقین</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">18 بار</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">کفر</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">انکار</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">17 بار</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ccc;">موسیٰ</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">نبی</td>
+          <td style="padding: 8px; border: 1px solid #ccc;">13 بار</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 style="margin-top: 20px; color: #444;">🧮 مرکزی آیت (143) اور سورۃ کی ساخت:</h3>
+    <p style="font-size: 1.1em;">آیت 143، سورۃ کے بالکل وسط میں آتی ہے، جس کا موضوع بھی <strong>اعتدال</strong> ہے — ساختی توازن کا حیران کن معجزہ۔</p>
+
+    <h3 style="margin-top: 20px; color: #444;">🧩 19 کا کوڈ:</h3>
+    <ul style="font-size: 1.1em; line-height: 2;">
+      <li>"بسم اللہ" میں 19 حروف</li>
+      <li>الم کی تکرار سورۃ البقرہ میں 989 = 19×52</li>
+      <li>قرآن کی کل آیات = 6346 = 19×334</li>
+    </ul>
+  </section>
+
+  <!-- Group: سائنسی معجزات -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">🔬 سائنسی اشارات و معجزات</h2>
+    <ul style="font-size: 1.1em; line-height: 2;">
+      <li>🌊 "ہم نے ہر جاندار کو پانی سے پیدا کیا" — جدید حیاتیات سے میل کھاتا ہے</li>
+      <li>💀 فرعون کی لاش محفوظ ہونے کی پیشن گوئی (10:92)</li>
+      <li>🔁 موت کے بعد زندگی — حضرت ابراہیم کا واقعہ (2:260)</li>
+    </ul>
+  </section>
+
+  <!-- Group: تاریخی معجزات -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">📜 تاریخی معجزات</h2>
+    <ul style="font-size: 1.1em; line-height: 2;">
+      <li>📖 بنی اسرائیل کی تاریخ کا جامع بیان</li>
+      <li>👑 طالوت و جالوت کا واقعہ</li>
+      <li>🐄 گائے کا قصہ — سورۃ کا نام بھی اسی پر</li>
+    </ul>
+  </section>
+
+  <!-- Group: قانونی و فقہی معجزات -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">⚖️ قانونی اور فقہی معجزات</h2>
+    <ul style="font-size: 1.1em; line-height: 2;">
+      <li>📜 قرض کا قانون — دنیا کے کسی مذہب یا دستور میں اس تفصیل سے موجود نہیں</li>
+      <li>👨‍👩‍👧‍👦 نکاح، طلاق، عدت، رضاعت</li>
+      <li>💸 سود کی حرمت (275–279)</li>
+    </ul>
+  </section>
+
+  <!-- Group: روحانی اثرات -->
+  <section style="margin-bottom: 30px;">
+    <h2 style="color: #8B0000;">🕋 روحانی اور نفسیاتی اثرات</h2>
+    <ul style="font-size: 1.1em; line-height: 2;">
+      <li>سورۃ البقرہ شیطان کو بھگاتی ہے — حدیث: "جس گھر میں یہ پڑھی جائے، وہاں شیطان داخل نہیں ہوتا"</li>
+      <li>دل کو سکون، یقین، اور دعا کی قوت عطا کرتی ہے</li>
+      <li>دینِ اسلام کے ہر شعبے کی رہنمائی موجود ہے</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <div style="text-align: center; margin-top: 50px; font-size: 1em; color: #666;">
+    ✨ <strong>یہ سب معجزات اللہ کے کلام کی سچائی اور طاقت کا مظہر ہیں۔</strong>
+  </div>
+</div>
+
+        `,
       rukoos: [
 {
   "number": 1,
