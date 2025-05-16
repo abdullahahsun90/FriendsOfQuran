@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Friends of Quran</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Surah Selection Page -->
+  <div id="surahSelectionPage" class="container">
+    <div class="header">
+      <h1>قرآن مجید</h1>
+      <div class="search-container">
+        <input type="text" id="surahSearch" placeholder="سورۃ تلاش کریں / Search Surah" />
+        <div id="searchResults" class="search-results"></div>
+      </div>
+    </div>
+    
+    <div id="surahList" class="surah-list">
+      <!-- Will be populated by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Surah Details Page (initially hidden) -->
+  <div id="surahDetailsPage" class="container" style="display:none;">
+    <div class="header">
+      <button id="backButton" class="back-button">← واپس</button>
+      <h1 id="surahTitle"></h1>
+    </div>
+
+    <main class="content">
+<div class="top-menu">
+  <button data-section="taaruf" class="active">تعارف</button>
+  <button data-section="contentSection">مواد</button>
+  <button data-section="aadaad">اعداد و شمار</button>
+  <button data-section="maujzaat">معجزات</button>
+</div>
+
+      <section id="taaruf" class="section active">
+        <div id="taarufContent"></div>
+      </section>
+
+      <section id="contentSection" class="section">
+        <h2>رکوع منتخب کریں</h2>
+        <select id="rukooSelect">
+          <option value="1">رکوع 1</option>
+          <option value="2">رکوع 2</option>
+          <option value="3">رکوع 3</option>
+        </select>
+
+        <div class="options">
+          <label><input type="checkbox" id="showArabic" checked> عربی</label>
+          <label><input type="checkbox" id="showTranslation" checked> ترجمہ</label>
+          <label><input type="checkbox" id="showTafseer" checked> تفسیر</label>
+          <label><input type="checkbox" id="showBullets" checked> نکات</label>
+        </div>
+
+        <div id="ayahContent" class="rukoo">
+          <!-- Content will be loaded here -->
+        </div>
+      </section>
+
+      <section id="aadaad" class="section">
+  <h2>اعداد و شمار</h2>
+  <div id="aadaadContent"></div>
+</section>
+
+<section id="maujzaat" class="section">
+  <h2>معجزات</h2>
+  <div id="maujzaatContent"></div>
+</section>
+
+    </main>
+  </div>
+</body>
+</html>
