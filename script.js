@@ -656,7 +656,7 @@ document.addEventListener("DOMContentLoaded", () => {
     أُوْلَٰٓئِكَ ٱلَّذِينَ ٱشۡتَرَوُاْ ٱلضَّلَٰلَةَ بِٱلۡهُدَىٰ فَمَا رَبِحَت تِّجَٰرَتَهُمۡ وَمَا كَانُواْ مُهۡتَدِينَ ﴿١٦﴾<br>\
     مَثَلُهُمۡ كَمَثَلِ ٱلَّذِي ٱسۡتَوۡقَدَ نَارٗا فَلَمَّآ أَضَآءَت مَا حَوۡلَهُۥ ذَهَبَ ٱللَّهُ بِنُورِهِمۡ وَتَرَكَهُمۡ فِي ظُلُمَٰتٍۢ لَّا يُبۡصِرُونَ ﴿١٧﴾<br>\
     صُمٌّۢ بُكۡمٌ عُمۡيٌ فَهُمۡ لَا يَرۡجِعُونَ ﴿١٨﴾<br>\
-    أَوْ كَصَيِّبٖ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٞ وَرَعْدٌۭ وَبَرْقٌۭ يَجۡعَلُونَ أَصَٰبِعَهُمۡ فِيٓ ءَاذَانِهِم مِّنَ ٱلصَّوَاعِقِ حَذَرَ ٱلۡمَوۡتِۚ وَٱللَّهُ مُحِيطٞ بِٱلۡك̧لِّۢ ﴿١٩﴾<br>\
+    أَوْ كَصَيِّبٖ مِّنَ ٱلسَّمَآءِ فِيهِ ظُلُمَٰتٞ وَرَعْدٌۭ وَبَرْقٌۭ يَجۡعَلُونَ أَصَٰبِعَهُمۡ فِيٓ ءَاذَانِهِم مِّنَ ٱلصَّوَاعِقِ حَذَرَ ٱلۡمَوۡتِۚ وَٱللَّهُ مُحِيطٞ بِٱلْكَافِرِينَ ﴿١٩﴾<br>\
     يَكَادُ ٱلۡبَرْقُ يَخۡطَفُ أَبۡصَٰرَهُمۡ كُلَّمَآ أَضَآءَ لَهُمۡ مَّشَوۡا۟ فِيهِ وَإِذَآ أَظۡلَمَ عَلَيهِمۡ قَامُوا۟ وَلَوۡ شَآءَ ٱللَّهُ لَذَهَبَ بِسَمۡعِهِمۡ وَأَبۡصَٰرِهِمۡۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيْءٍۢ قَدِيرٌ ﴿٢٠﴾",
   "translation": 
     "اور لوگوں میں بعض ایسے بھی ہیں جو کہتے ہیں کہ ہم اللہ پر اور قیامت کے دن پر ایمان لے آئے، حالانکہ وہ ایمان والے نہیں ہیں۔ (8)<br>\
@@ -813,18 +813,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Show surah details
-  function showSurahDetails(surah) {
+// Modify the showSurahDetails function to also load aadaad and maujzaat content
+function showSurahDetails(surah) {
     surahTitle.textContent = `سورۃ ${surah.urduName}`;
     taarufContent.innerHTML = surah.taaruf;
+    
+    // Load aadaad and maujzaat content
+    document.getElementById('aadaadContent').innerHTML = surah.aadaad;
+    document.getElementById('maujzaatContent').innerHTML = surah.maujzaat;
     
     // Populate rukoo select
     rukooSelect.innerHTML = '';
     surah.rukoos.forEach(rukoo => {
-      const option = document.createElement('option');
-      option.value = rukoo.number;
-      option.textContent = `رکوع ${rukoo.number}`;
-      rukooSelect.appendChild(option);
+        const option = document.createElement('option');
+        option.value = rukoo.number;
+        option.textContent = `رکوع ${rukoo.number}`;
+        rukooSelect.appendChild(option);
     });
     
     // Load first rukoo by default
@@ -834,7 +838,7 @@ document.addEventListener("DOMContentLoaded", () => {
     surahSelectionPage.style.display = "none";
     surahDetailsPage.style.display = "block";
     window.scrollTo(0, 0);
-  }
+}
 
   // Load rukoo content
   function loadRukooContent(rukoo) {
